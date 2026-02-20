@@ -114,7 +114,7 @@ function App() {
   const viewportRef = useRef(null);
   const stageRef = useRef(null);
   const [inputType, setInputType] = useState('text');
-  const [inputValue, setInputValue] = useState('abc');
+  const [inputValue, setInputValue] = useState('vivgrid.com');
   const [step, setStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [speed, setSpeed] = useState(180);
@@ -237,7 +237,33 @@ function App() {
     <div className="fit-viewport" ref={viewportRef}>
       <div className="app-shell" ref={stageRef} style={{ transform: `scale(${scale})` }}>
         <header className="hero">
-          <p className="hero-tag">md5algorithm.com</p>
+          <div className="hero-top">
+            <p className="hero-tag">md5algorithm.com</p>
+            <div className="hero-actions">
+              <a
+                className="external-link vivgrid-link"
+                href="https://vivgrid.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open vivgrid.com"
+              >
+                <img src="/vivgrid-logo.svg" alt="" />
+                <span>vivgrid.com</span>
+              </a>
+            <a
+              className="external-link github-link"
+              href="https://github.com/fanweixiao/md5algorithm"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open GitHub repository"
+            >
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-.94-2.69-.94-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.81.06 1.24.83 1.24.83.72 1.24 1.88.88 2.34.67.07-.52.28-.88.5-1.08-1.77-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.66 7.66 0 0 1 4.01 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.88 3.75-3.67 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            </div>
+          </div>
           <h1>MD5 algorithm explained online step by step visually</h1>
           <p>
             This website will help you understand how a md5 hash is calculated from start to finish.
